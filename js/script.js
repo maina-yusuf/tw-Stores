@@ -72,10 +72,9 @@ var Typed = new Typed(".main itnro",{
 function increase(event) {
   const button = event.target;
   const cardBody = button.closest(".item1");
-  const quantityItem = cardBody.querySelector(".quantity");
-  let quantity = parseInt(quantityItem.textContent, 10);
+  const quantityItem = cardBody.querySelector("input[type='number']");  let quantity = parseInt(quantityItem.value, 10);
   quantity += 1;
-  quantityItem.textContent = quantity;
+  quantityItem.value = quantity;
 }
 
 const addbuttons = document.getElementsByClassName("fa fa-plus");
