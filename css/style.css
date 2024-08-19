@@ -411,6 +411,7 @@ body {
     color: #e85a4f;
 }
 
+/* Media query for footer */
 @media screen and (max-width: 320px){
     .footer {
         margin-top: 20px;    
@@ -462,8 +463,6 @@ body {
     position: relative;
     margin: 0px 100px 0px 100px;
     border-radius: 10px;
-    
-   
 }  
 
 .slider-container img {
@@ -472,7 +471,6 @@ body {
 .slider-item{
     display: none;
 } 
-
 
 .prev, .next {
     cursor: pointer;
@@ -489,7 +487,6 @@ body {
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
-
 
 .next {
     right: 0;
@@ -557,7 +554,6 @@ body {
     text-align: center;
 }
 
-
 .main-container .details button {
     margin: 10px;
     padding-left: 50px;
@@ -571,6 +567,55 @@ body {
 .main-container .details button a{
     color: white;
     font-weight: bolder;
+}
+/* Query for home page */
+@media screen and (max-width:320px) {
+    .main-container .details {
+        background-color: #eae7dc;
+        margin: 0px 0px;
+        font-weight: 200;
+        padding: 40px 20px 20px 20px;
+        border-radius: 10px;
+        
+    }
+    .main-container .details h4 {
+        font-size: 15px;
+        margin: 0px 0px;
+        line-height: normal;
+    
+    }
+    .main-container .details p{
+        text-align: left;
+        font-size: smaller;
+        padding: 0px;
+        line-height: normal;
+        width: fit-content;
+    }
+    .main-container .main-intro {
+        padding: 0px;
+        padding-top: 80px;
+    }
+    .slider-container {
+        position: relative;
+        margin: 0px 0px 0px 0px;
+    }  
+    .captext {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .prev, .next {
+        margin-top: -22px;
+        padding: 10px;
+        font-size: 19px;
+    }
+    .main-container .details button {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    
 }
   
   @keyframes fade {
@@ -690,8 +735,6 @@ input::-webkit-inner-spin-button {
     }
    
     .main-container .main-intro{
-        padding: 50px;
-        margin: auto;
         text-align: center;
         font-size: large;
         font-style: oblique;
@@ -700,7 +743,6 @@ input::-webkit-inner-spin-button {
     .main-container .best-deals .item1 .additem input{
         margin-left: 10px;
         margin-right: 10px;
-       
     }
 }
 
@@ -769,6 +811,9 @@ input::-webkit-inner-spin-button {
     color: black;
     text-align: justify;
 }
+
+/* Media query for About */
+
 @media screen and (max-width: 320px) {
     
     .main-content h1{
@@ -788,6 +833,7 @@ input::-webkit-inner-spin-button {
     }
    
 }
+
 /* Sign In Page */
 .card{
     text-align: center;
@@ -858,6 +904,7 @@ input::-webkit-inner-spin-button {
     color: #e85a4f;
 }
 
+/* Media query for Sign In */
 @media screen and (max-width: 426px) {
     .card .signin{
         padding: 20px 20px 50px 20px;
@@ -917,16 +964,15 @@ input::-webkit-inner-spin-button {
     font-size: smaller;
 }
 
-@media screen and(max-width: 320px) {
-    .main-container .row1{
-        margin: auto;
-    }
-    
-    
+/* Media query for cart */
 
-    
-    
+@media screen and (max-width: 320px) {
+    .main-content .row1{
+        padding: 10px;
+        margin-top: 10px;
+    }
 }
+
 /* Support Page */
 .main-content h2{
     text-align: center;
@@ -991,6 +1037,14 @@ input::-webkit-inner-spin-button {
     background-color: #a94d45;
     border: 2px #a94d45 solid;
 }
+.main-content .contact-us .right .textarea{
+    width: 530px; 
+    height: 150px; 
+    padding-top: 20px;
+}
+
+
+/* Media query for Support */
 @media screen and (max-width:320px) {
     .main-content h2{
         font-size: medium;
@@ -1018,59 +1072,39 @@ input::-webkit-inner-spin-button {
         margin: 0px 10px 0px 0px;
     }
     .main-content .contact-us .right input{
-        margin-left: -100px;
+        width: 250px;
+        margin-left: 0px;
+    }
+    .main-content .contact-us .right label{
+        text-align: center;
+        width: 90%;
     }
     .main-content .contact-us .right p{
-        text-align: justify;
+        text-align: left;
+        font-size: smaller;
+        width: 90%;
     }
-   
-    
+    .main-content .contact-us .right h2{
+        text-align: center;
+        width: 60%;
+    }
     .main-content .contact-us .right button{
         margin-top: 10px;
         margin-bottom: 20px;
-        text-align: center;
         padding: 10px 45px 10px 45px;
-        border-radius: 30px;
-        color: white;
-        background-color: #e85a4f;
-        font-weight: bold;
-        border: 2px #e85a4f solid;
+        margin-left: 40px;
+    }
+    .main-content .contact-us .right .textarea{
+        width: 250px;
     }
     
 }
 
 /* Featured Page */
-/* .main-container .card1{
-    padding: 20px;
-    background-color: red;
-    margin: 20px 50px;
-    display: flex;
-    flex-direction: row;
-    border-radius: 10px;
-} */
-/* .main-container .card1 .h1, 
-.main-container .card1 .img {
-    display: flex;
-    flex-direction: column;
-} */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-.main-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-    flex-wrap: wrap;
-}
 
 .main-container .card1{
     padding: 20px;
-    background-color: red;
+    background-color: #f0ead8b6;
     margin: 10px 50px;
     display: flex;
     border-radius: 10px;
@@ -1086,7 +1120,7 @@ body {
     padding: 20px 40px;
     width: 70%;
     margin: 0px 20px;
-    background-color: #e85a4f;
+    background-color: #f0ead8b6;
     border-radius: 10px;
     line-height: 25px;
 
@@ -1094,7 +1128,7 @@ body {
 .main-container .inner2 .card3{
     padding: 20px;
     margin: 0px 20px ;
-    background-color: #e85a4f;
+    background-color: #f0ead8b6;
     text-align: justify;
     border-radius: 10px;
     line-height: 30px;
@@ -1105,4 +1139,119 @@ body {
     font-weight: bolder;
     font-size: large;
     margin-bottom: 10px
+}
+.main-container .card1 .inner h1{
+    color: black;
+    margin-left: 40px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: justify;
+}
+.main-container .card1 .inner form{
+    padding: 20px ;
+    background-color:#d6d1bfb6;
+    margin-left: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 150%;
+}
+.main-container .card1 .inner form p{
+    color: black;
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+.main-container .card1 .inner form label{
+    padding: 10px ;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.main-container .card1 .inner form label:hover{
+    background-color: #e85a4f;
+}
+.main-container .card1 .inner form label:active,
+.main-container .card1 .inner form label:focus{
+    background-color: #e85a4f;
+}
+.main-container .card1 .inner form label input{
+   background-color: #d6d1bfb6;
+   /* opacity: 0; */
+   font-size: xx-small;
+}
+.main-container .card1 .inner form label input:hover{
+    cursor:pointer ;
+}
+
+.main-container .card1 .inner form .label2{
+    padding: 20px 20px 20px 0px;
+    margin-top: 50px;
+    display: block;
+    margin-top: 20px;
+}
+.main-container .card1 .inner form .label2 label{
+    border: none;
+    margin-left: -10px;
+    font-weight: bolder;
+}
+.main-container .card1 .inner form .label2 select{
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px ;
+}
+
+.main-container .card1 .inner form .label2 button{
+    background-color: #e85a4f;
+    margin-bottom: 30px;
+    padding: 11px 50px;
+    border-radius: 5px;
+    border:  none;
+}
+.main-container .card1 .inner form .label2 button:hover{
+    background-color: #a94d45;
+    cursor: pointer;
+}
+
+/* Media query for Featured */
+@media screen and (max-width: 320px) {
+    
+    .main-container .card1{
+    padding: 70px 20px 20px 20px;
+    background-color: #f0ead8b6;
+    margin: 0px 10px 20px 10px;
+    display: block;
+    }
+    .main-container .card1 img{
+    width: 100%;
+    }
+    .main-container .inner2{
+    display: block;
+    margin-left: 10px;
+    margin-right: 30px;
+    }
+
+    .main-container .inner2 .card2{
+    padding: 20px 40px;
+    width: 100%;
+    margin: 20px 0px;
+    }
+    .main-container .inner2 .card3{
+    padding: 20px;
+    margin: 0px 0px;
+    }
+    .main-container .card1 .inner h1{
+        margin-left: 10px;
+        font-size: 15px;
+        text-align: left;
+        font-weight: bolder;
+    }
+    
+    .main-container .card1 .inner form{
+    padding: 20px ;
+    margin-left: 5px;
+    width: 100%;
+    }
+    .main-container .card1 .inner form .label2 button{
+        margin-top: 20px;
+    }
 }
